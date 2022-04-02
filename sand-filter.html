@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Sand Filter</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="nivo-slider.css" type="text/css" />
+<link rel="stylesheet" href="themes/default/default.css" type="text/css" />
+
+<script type="text/javascript" src='jquery-1.2.6.min.js'></script>
+<script type="text/javascript" src="jquery.bgpos.js"></script>
+<script type="text/javascript">
+	$( document ).ready(function( $ ) {
+	$('#navbar > ul li a')
+		.css( {backgroundPosition: "-20px 35px"} )
+		.mouseover(function(){
+			$(this).stop().animate({backgroundPosition:"(-20px 94px)"}, {duration:500})
+		})
+		.mouseout(function(){
+			$(this).stop().animate({backgroundPosition:"(40px 35px)"}, {duration:200, complete:function(){
+				$(this).css({backgroundPosition: "-20px 35px"})
+			}})
+		})
+});
+</script>
+<script type="text/javascript" src='jquery-1.9.0.min.js'></script>
+<script src="jquery.nivo.slider.pack.js" type="text/javascript"></script>
+<script type="text/javascript">
+jQuery.noConflict()(function($){
+	$(window).load(function() {
+ 	$('#slider').nivoSlider({
+     	effect:'random',
+     	pauseTime: 6000,
+     	directionNav: false,
+     	animSpeed: 2000,  
+     	pauseOnHover: false
+        });
+  	});
+});
+</script>
+
+
+
+</head>
+<body>
+	<div id="wrapper">
+		<div id="container">
+			<div id="header" >
+				<div id="logo" ><img src="images/log.png" alt="logo"/></div>	
+				<div id="navbar">
+					<ul>
+						<li ><a  href="index.html"  >Home</a></li>
+						<li ><a href="about.html"  >About Us</a></li>
+						<li ><a href="services.html"  >Services</a></li>
+						<li ><a href="javascript:void(0);"  style="cursor:default">Products</a>
+							<ul>
+								<li ><a  href="javascript:void(0);" style="cursor:default" >Water Treatment</a>
+									<ul>
+										<li ><a  href="javascript:void(0);" style="cursor:default" > Filtration System</a>
+											<ul>
+												<li ><a  href="carbon-filter.html"  >Carbon Filter</a></li>									
+												<li ><a href="sand-filter.html"  >Sand Filter</a></li>
+												<li ><a href="pressure-filter.html"  >Pressure Filter</a></li>
+												<li ><a href="dualmfilter.html"  >Dual Media Filter</a></li>
+											</ul>	
+										</li>
+										<li ><a href="clarifier.html"  > Clarifier</a></li>
+										<li ><a href="ultra-filtration.html"  >Ultra Fileration</a></li>
+										<li ><a href="chemical-dosing.html"  >Chemical Dosing</a></li>
+									</ul>								
+								</li>
+								<li ><a href="javascript:void(0);" style="cursor:default" >RO System</a>
+									<ul>
+										<li ><a  href="domestic-ro.html"  >Domestic RO</a></li>									
+										<li ><a href="industrial-ro.html"  >Industrial RO</a></li>
+										<li ><a href="uv.html"  >UV & Ozone</a></li>
+									</ul>									
+								</li>
+								<li ><a href="javascript:void(0);" style="cursor:default" >Waste Water Treatment</a>
+									<ul>
+										<li ><a  href="sewage.html"  >Sewage water</a></li>									
+										<li ><a href="effluent.html">Effluent Treatment</a></li>
+										<li ><a href="javascript:void(0);" style="cursor:default" >Evaporators</a>
+											<ul>
+												<li ><a  href="falling-flim.html"  >Falling flim</a></li>									
+												<li ><a href="rising-flim.html"  >Rising flim</a></li>
+												<li ><a href="forced-circulation.html"  >Forced Circulation</a></li>
+												<li ><a href="multiple-effect.html"  >Multiple Effect</a></li>
+											</ul>
+										</li>
+									</ul>											
+								</li>
+								<li ><a href="dish-end.html"  >Dished End Pressing</a></li>
+								<li ><a href="vessel-fab.html"  >MS Vessel Fabrication</a></li>
+								<li ><a href="water-softner.html"  >Water Softner</a></li>	
+								<li ><a href="javascript:void(0);" style="cursor:default" >Chemical Treatment</a>
+									<ul>
+										<li ><a  href="cooling-tower.html"  >Cooling Tower</a></li>									
+										<li ><a href="boiler-chemical.html">Boiler Chemical</a></li>
+									</ul>	
+								</li>     
+							</ul>
+						</li>
+						<li ><a href="gallery.html"  >Gallery</a></li> 
+						<li ><a href="contact.php"  >Contact Us</a></li>     
+					</ul>
+				</div>	
+			</div>
+			<div class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider">
+                <img src="images/slide1.png"  alt="" title="#htmlcaption1" >            
+                <img src="images/slide2.png" alt="" title="#htmlcaption2">
+                <img src="images/slide3.png" alt="" title="#htmlcaption3">
+                <img src="images/slide4.png"  alt="" title="#htmlcaption4">
+                <img src="images/slide5.png"  alt="" title="#htmlcaption5" >
+                <img src="images/slide6.png"  alt="" title="#htmlcaption6" >
+			
+                
+            </div>
+            <div id="htmlcaption1" class="nivo-html-caption">
+                <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
+            </div>
+            <div id="htmlcaption2" class="nivo-html-caption">
+                <strong>This</strong> is an demo of a <em>HTML</em> caption with <a href="#">a link</a>. 
+            </div>
+            <div id="htmlcaption3" class="nivo-html-caption">
+                <strong>This</strong> is an test of a <em>HTML</em> caption with <a href="#">a link</a>. 
+            </div>
+            <div id="htmlcaption4" class="nivo-html-caption">
+                <strong>This</strong> is an sample of a <em>HTML</em> caption with <a href="#">a link</a>. 
+            </div>
+        </div>	
+			<div id="content" style="outline:1px solid rgba(0,0,0,0.1);">	
+				<div id="pcontent">
+					<h1 style="color:#41873d; ">Sand Filter</h1>
+					<br>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;A <b>sand filter</b> is a kind of depth filter. Broadly, there are two types of filter for separating particulate solids from fluids:<br><br>
+						
+						<ul>
+							<li><span>Surface filters, where particulates are captured on a permeable surface</span></li>
+							<li><span>Depth filters, where particulates are captured within a porous body of material</span></li>
+						</ul><br>
+						There are several kinds of depth filter, some employing fibrous material and others employing granular materials. Sand bed filters are an example of a granular loose media depth filter. <b>They are usually used to separate small amounts (<10 parts per million or <10 g per cubic metre) of fine solids (<100 micrometres) from aqueous solutions.</b> In addition, they are usually used to purify the fluid rather than capture the solids as a valuable material. Therefore they find most of their uses in wastewater treatment.<br><br>
+						There are three main types;<br><br>
+						<ul>
+							<li><span>1. rapid (gravity) sand filters </span></li>
+							<li><span>2. upflow sand filters </span></li>		
+							<li><span>3. slow sand filters </span></li>				
+						</ul><br>
+						<div style="margin-left:80px;padding-right:20px; padding-left:20px;"><img src="content images/sfilt.jpg" ></img></div>						
+						All three methods are used extensively in the water industry throughout the world. The first two require the use of flocculant chemicals to work effectively while slow sand filters can produce very high quality water free from pathogens, taste and odour without the need for chemical aids.<br><br>
+						They can be operated either with upward flowing fluids or downward flowing fluids the latter being much more usual. For downward flowing devices the fluid can flow under pressure or by gravity alone. Pressure sand bed filters tend to be used in industrial applications and often referred to as rapid sand bed filters. Gravity fed units are used in water purification especially drinking water and these filters have found wide use in developing countries (slow sand filters). <br><br>					
+					</p>
+				</div>
+				<div id="rborder" style="display:none;"></div>
+				<div id="sidebar" style="display:none;">
+					<img src="images/c1.jpg"style="width: 220px; height: 430px;" alt="">
+					<p>"Over <strong>70</strong> percent of earth is covered in water. Only <strong>2</strong> percent of planets water is fresh, but <strong>0.4</strong> percent is locked in polar ice caps and glaciers. Leaving the world with just <strong>0.4</strong> percent to survive on."</p>
+				</div>
+			</div>
+			
+		</div>
+	</div>	
+	<div id="footer">
+		<div id="fcontent">
+		<ul>
+			<li id="home"><a  href="index.html"  >Home</a></li>
+			<li><a href="javascript:void(0);">|</a></li>									
+			<li id="about"><a href="about.html"  >About Us</a></li>
+			<li><a href="javascript:void(0);">|</a></li>	
+			<li id="service"><a href="services.html"  >Services</a></li>
+			<li><a href="javascript:void(0);">|</a></li>	
+			<li id="product"><a href="carbon-filter.html"  >Products</a></li>
+			<li><a href="javascript:void(0);">|</a></li>	
+			<li id="gallery"><a href="gallery.html"  >Gallery</a></li>
+			<li><a href="javascript:void(0);">|</a></li>	
+			<li id="sitemap"><a href="sitemap.html"  >Sitemap</a></li>
+			<li><a href="javascript:void(0);">|</a></li>
+			<li id="contact"><a href="contact.php"  >Contact Us</a></li>										
+		</ul>
+		<p>© 2014 Water Purification Company. All Rights Reserved.</p> 
+		<div>Designed by <a href="http://kenosys.in"><strong>Kenosys Pro Designs.</strong></a></div>
+		</div>	
+	</div>
+</body>
+</html>

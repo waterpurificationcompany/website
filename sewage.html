@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Sewage Treatment</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="nivo-slider.css" type="text/css" />
+<link rel="stylesheet" href="themes/default/default.css" type="text/css" />
+
+<script type="text/javascript" src='jquery-1.2.6.min.js'></script>
+<script type="text/javascript" src="jquery.bgpos.js"></script>
+<script type="text/javascript">
+	$( document ).ready(function( $ ) {
+	$('#navbar > ul li a')
+		.css( {backgroundPosition: "-20px 35px"} )
+		.mouseover(function(){
+			$(this).stop().animate({backgroundPosition:"(-20px 94px)"}, {duration:500})
+		})
+		.mouseout(function(){
+			$(this).stop().animate({backgroundPosition:"(40px 35px)"}, {duration:200, complete:function(){
+				$(this).css({backgroundPosition: "-20px 35px"})
+			}})
+		})
+});
+</script>
+<script type="text/javascript" src='jquery-1.9.0.min.js'></script>
+<script src="jquery.nivo.slider.pack.js" type="text/javascript"></script>
+<script type="text/javascript">
+jQuery.noConflict()(function($){
+	$(window).load(function() {
+ 	$('#slider').nivoSlider({
+     	effect:'random',
+     	pauseTime: 6000,
+     	directionNav: false,
+     	animSpeed: 2000,  
+     	pauseOnHover: false
+        });
+  	});
+});
+</script>
+
+
+
+</head>
+<body>
+	<div id="wrapper">
+		<div id="container">
+			<div id="header" >
+				<div id="logo" ><img src="images/log.png" alt="logo"/></div>	
+				<div id="navbar">
+					<ul>
+						<li ><a  href="index.html"  >Home</a></li>
+						<li ><a href="about.html"  >About Us</a></li>
+						<li ><a href="services.html"  >Services</a></li>
+						<li ><a href="javascript:void(0);"  style="cursor:default">Products</a>
+							<ul>
+								<li ><a  href="javascript:void(0);" style="cursor:default" >Water Treatment</a>
+									<ul>
+										<li ><a  href="javascript:void(0);" style="cursor:default" > Filtration System</a>
+											<ul>
+												<li ><a  href="carbon-filter.html"  >Carbon Filter</a></li>									
+												<li ><a href="sand-filter.html"  >Sand Filter</a></li>
+												<li ><a href="pressure-filter.html"  >Pressure Filter</a></li>
+												<li ><a href="dualmfilter.html"  >Dual Media Filter</a></li>
+											</ul>	
+										</li>
+										<li ><a href="clarifier.html"  > Clarifier</a></li>
+										<li ><a href="ultra-filtration.html"  >Ultra Fileration</a></li>
+										<li ><a href="chemical-dosing.html"  >Chemical Dosing</a></li>
+									</ul>								
+								</li>
+								<li ><a href="javascript:void(0);" style="cursor:default" >RO System</a>
+									<ul>
+										<li ><a  href="domestic-ro.html"  >Domestic RO</a></li>									
+										<li ><a href="industrial-ro.html"  >Industrial RO</a></li>
+										<li ><a href="uv.html"  >UV & Ozone</a></li>
+									</ul>									
+								</li>
+								<li ><a href="javascript:void(0);" style="cursor:default" >Waste Water Treatment</a>
+									<ul>
+										<li ><a  href="sewage.html"  >Sewage water</a></li>									
+										<li ><a href="effluent.html">Effluent Treatment</a></li>
+										<li ><a href="javascript:void(0);" style="cursor:default" >Evaporators</a>
+											<ul>
+												<li ><a  href="falling-flim.html"  >Falling flim</a></li>									
+												<li ><a href="rising-flim.html"  >Rising flim</a></li>
+												<li ><a href="forced-circulation.html"  >Forced Circulation</a></li>
+												<li ><a href="multiple-effect.html"  >Multiple Effect</a></li>
+											</ul>
+										</li>
+									</ul>											
+								</li>
+								<li ><a href="dish-end.html"  >Dished End Pressing</a></li>
+								<li ><a href="vessel-fab.html"  >MS Vessel Fabrication</a></li>
+								<li ><a href="water-softner.html"  >Water Softner</a></li>
+								<li ><a href="javascript:void(0);" style="cursor:default" >Chemical Treatment</a>
+									<ul>
+										<li ><a  href="cooling-tower.html"  >Cooling Tower</a></li>									
+										<li ><a href="boiler-chemical.html">Boiler Chemical</a></li>
+									</ul>	
+								</li>     
+							</ul>
+						</li>
+						<li ><a href="gallery.html"  >Gallery</a></li> 
+						<li ><a href="contact.php"  >Contact Us</a></li>     
+					</ul>
+				</div>	
+			</div>
+			<div class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider">
+                <img src="images/slide1.png"  alt="" title="#htmlcaption1" >            
+                <img src="images/slide2.png" alt="" title="#htmlcaption2">
+                <img src="images/slide3.png" alt="" title="#htmlcaption3">
+                <img src="images/slide4.png"  alt="" title="#htmlcaption4">
+                <img src="images/slide5.png"  alt="" title="#htmlcaption5" >
+                <img src="images/slide6.png"  alt="" title="#htmlcaption6" >
+			
+                
+            </div>
+            <div id="htmlcaption1" class="nivo-html-caption">
+                <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
+            </div>
+            <div id="htmlcaption2" class="nivo-html-caption">
+                <strong>This</strong> is an demo of a <em>HTML</em> caption with <a href="#">a link</a>. 
+            </div>
+            <div id="htmlcaption3" class="nivo-html-caption">
+                <strong>This</strong> is an test of a <em>HTML</em> caption with <a href="#">a link</a>. 
+            </div>
+            <div id="htmlcaption4" class="nivo-html-caption">
+                <strong>This</strong> is an sample of a <em>HTML</em> caption with <a href="#">a link</a>. 
+            </div>
+        </div>	
+			<div id="content" style="outline:1px solid rgba(0,0,0,0.1);">	
+				<div id="pcontent">
+					<h1 style="color:#41873d; ">Sewage Water Treatment</h1>
+					<br><br>
+					<p><div style="float:right; padding-left:10px; padding-top:10px;"><img src="content images/eff1.jpg" style=" border:3px solid white; box-shadow:0px 4px 4px 0px #888888;" width="400" height="200"></img></div>	<br><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<b>Sewage treatment</b> is the process of removing contaminants from wastewater, including household sewage. It includes physical, chemical, and biological processes to remove contaminants. Its objective is to produce an environmentally safe fluid waste stream (or treated effluent) and a solid waste (or treated sludge) suitable for disposal or reuse (usually as farm fertilizer). <br><br>
+  				      Sewage can be treated close to where the sewage is created, a decentralized system (in septic tanks, biofilters or aerobic treatment systems), or be collected and transported by a network of pipes and pump stations to a municipal treatment plant, a centralized system. <br><br>
+  				      Sewage collection and treatment is typically subject to local, state and federal regulations and standards. Industrial sources of sewage often require specialized treatment processes.<br><br>
+					   <strong>Primary treatment:</strong><br><br>
+					   &nbsp;&nbsp;&nbsp;&nbsp;Primary treatment consists of temporarily holding the sewage in a quiescent basin where heavy solids can settle to the bottom while oil, grease and lighter solids float to the surface. The settled and floating materials are removed and the remaining liquid may be discharged or subjected to secondary treatment.<br><br>  				      
+  				      <strong>Secondary treatment:</strong><br><br>
+					   &nbsp;&nbsp;&nbsp;&nbsp;Secondary treatment removes dissolved and suspended biological matter. Secondary treatment is typically performed by indigenous, water-borne micro-organisms in a managed habitat. Secondary treatment may require a separation process to remove the micro-organisms from the treated water prior to discharge or tertiary treatment.<br><br>
+  				      <strong>Tertiary treatment:</strong><br><br>
+					   &nbsp;&nbsp;&nbsp;&nbsp;Tertiary treatment is sometimes defined as anything more than primary and secondary treatment in order to allow rejection into a highly sensitive or fragile ecosystem (estuaries, low-flow rivers, coral reefs,...). Treated water is sometimes disinfected chemically or physically (for example, by lagoons and microfiltration) prior to discharge into a stream, river, bay, lagoon or wetland, or it can be used for the irrigation of a golf course, green way or park. If it is sufficiently clean, it can also be used for groundwater recharge or agricultural purposes.<br><br>				
+						<b>We expertise in sewage treatment by following processes:</b><br><br>
+						<ul>
+							<li><span>Half flow filteration</span></li>						
+							<li><span>Oxidation ditch</span></li>						
+							<li><span>RBC(Rotating Biological Contactor)</span></li>
+							<li><span>Activated sludge process</span></li>						
+							<li><span>Suspended growth process</span></li>						
+							<li><span>Attached growth process</span></li>												
+							<li><span>Membrane bioreactor</span></li>						
+						</ul>							
+					</p>
+				</div>
+				<div id="rborder" style="display:none;"></div>
+				<div id="sidebar" style="display:none;">
+					<img src="images/c1.jpg"style="width: 220px; height: 430px;" alt="">
+					<p>"Over <strong>70</strong> percent of earth is covered in water. Only <strong>2</strong> percent of planets water is fresh, but <strong>0.4</strong> percent is locked in polar ice caps and glaciers. Leaving the world with just <strong>0.4</strong> percent to survive on."</p>
+				</div>
+			</div>
+			
+		</div>
+	</div>	
+	<div id="footer">
+		<div id="fcontent">
+		<ul>
+			<li id="home"><a  href="index.html"  >Home</a></li>
+			<li><a href="javascript:void(0);">|</a></li>									
+			<li id="about"><a href="about.html"  >About Us</a></li>
+			<li><a href="javascript:void(0);">|</a></li>	
+			<li id="service"><a href="services.html"  >Services</a></li>
+			<li><a href="javascript:void(0);">|</a></li>	
+			<li id="product"><a href="carbon-filter.html"  >Products</a></li>
+			<li><a href="javascript:void(0);">|</a></li>	
+			<li id="gallery"><a href="gallery.html"  >Gallery</a></li>
+			<li><a href="javascript:void(0);">|</a></li>	
+			<li id="sitemap"><a href="sitemap.html"  >Sitemap</a></li>
+			<li><a href="javascript:void(0);">|</a></li>
+			<li id="contact"><a href="contact.php"  >Contact Us</a></li>										
+		</ul>
+		<p>© 2014 Water Purification Company. All Rights Reserved.</p> 
+		<div>Designed by <a href="http://kenosys.in"><strong>Kenosys Pro Designs.</strong></a></div>
+		</div>	
+	</div>
+</body>
+</html>

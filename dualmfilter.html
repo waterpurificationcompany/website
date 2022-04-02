@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Dual media filter</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="nivo-slider.css" type="text/css" />
+<link rel="stylesheet" href="themes/default/default.css" type="text/css" />
+
+<script type="text/javascript" src='jquery-1.2.6.min.js'></script>
+<script type="text/javascript" src="jquery.bgpos.js"></script>
+<script type="text/javascript">
+	$( document ).ready(function( $ ) {
+	$('#navbar > ul li a')
+		.css( {backgroundPosition: "-20px 35px"} )
+		.mouseover(function(){
+			$(this).stop().animate({backgroundPosition:"(-20px 94px)"}, {duration:500})
+		})
+		.mouseout(function(){
+			$(this).stop().animate({backgroundPosition:"(40px 35px)"}, {duration:200, complete:function(){
+				$(this).css({backgroundPosition: "-20px 35px"})
+			}})
+		})
+});
+</script>
+<script type="text/javascript" src='jquery-1.9.0.min.js'></script>
+<script src="jquery.nivo.slider.pack.js" type="text/javascript"></script>
+<script type="text/javascript">
+jQuery.noConflict()(function($){
+	$(window).load(function() {
+ 	$('#slider').nivoSlider({
+     	effect:'random',
+     	pauseTime: 6000,
+     	directionNav: false,
+     	animSpeed: 2000,  
+     	pauseOnHover: false
+        });
+  	});
+});
+</script>
+
+
+
+</head>
+<body>
+	<div id="wrapper">
+		<div id="container">
+			<div id="header" >
+				<div id="logo" ><img src="images/log.png" alt="logo"/></div>	
+				<div id="navbar">
+					<ul>
+						<li ><a  href="index.html"  >Home</a></li>
+						<li ><a href="about.html"  >About Us</a></li>
+						<li ><a href="services.html"  >Services</a></li>
+						<li ><a href="javascript:void(0);"  style="cursor:default">Products</a>
+							<ul>
+								<li ><a  href="javascript:void(0);" style="cursor:default" >Water Treatment</a>
+									<ul>
+										<li ><a  href="javascript:void(0);" style="cursor:default" > Filtration System</a>
+											<ul>
+												<li ><a  href="carbon-filter.html"  >Carbon Filter</a></li>									
+												<li ><a href="sand-filter.html"  >Sand Filter</a></li>
+												<li ><a href="pressure-filter.html"  >Pressure Filter</a></li>
+												<li ><a href="dualmfilter.html"  >Dual Media Filter</a></li>
+											</ul>	
+										</li>
+										<li ><a href="clarifier.html"  > Clarifier</a></li>
+										<li ><a href="ultra-filtration.html"  >Ultra Filtration</a></li>
+										<li ><a href="chemical-dosing.html"  >Chemical Dosing</a></li>
+									</ul>								
+								</li>
+								<li ><a href="javascript:void(0);" style="cursor:default" >RO System</a>
+									<ul>
+										<li ><a  href="domestic-ro.html"  >Domestic RO</a></li>									
+										<li ><a href="industrial-ro.html"  >Industrial RO</a></li>
+										<li ><a href="uv.html"  >UV & Ozone</a></li>
+									</ul>									
+								</li>
+								<li ><a href="javascript:void(0);" style="cursor:default" >Waste Water Treatment</a>
+									<ul>
+										<li ><a  href="sewage.html"  >Sewage water</a></li>									
+										<li ><a href="effluent.html">Effluent Treatment</a></li>
+										<li ><a href="javascript:void(0);" style="cursor:default" >Evaporators</a>
+											<ul>
+												<li ><a  href="falling-flim.html"  >Falling flim</a></li>									
+												<li ><a href="rising-flim.html"  >Rising flim</a></li>
+												<li ><a href="forced-circulation.html"  >Forced Circulation</a></li>
+												<li ><a href="multiple-effect.html"  >Multiple Effect</a></li>
+											</ul>
+										</li>
+									</ul>											
+								</li>
+								<li ><a href="dish-end.html"  >Dished End Pressing</a></li>
+								<li ><a href="vessel-fab.html"  >MS Vessel Fabrication</a></li>
+								<li ><a href="water-softner.html"  >Water Softner</a></li>
+								<li ><a href="javascript:void(0);" style="cursor:default" >Chemical Treatment</a>
+									<ul>
+										<li ><a  href="cooling-tower.html"  >Cooling Tower</a></li>									
+										<li ><a href="boiler-chemical.html">Boiler Chemical</a></li>
+									</ul>	
+								</li>     
+							</ul>
+						</li>
+						<li ><a href="gallery.html"  >Gallery</a></li> 
+						<li ><a href="contact.php"  >Contact Us</a></li>     
+					</ul>
+				</div>	
+			</div>
+			<div class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider">
+                <img src="images/slide1.png"  alt="" title="#htmlcaption1" >            
+                <img src="images/slide2.png" alt="" title="#htmlcaption2">
+                <img src="images/slide3.png" alt="" title="#htmlcaption3">
+                <img src="images/slide4.png"  alt="" title="#htmlcaption4">
+                <img src="images/slide5.png"  alt="" title="#htmlcaption5" >
+                <img src="images/slide6.png"  alt="" title="#htmlcaption6" >
+			
+                
+            </div>
+            <div id="htmlcaption1" class="nivo-html-caption">
+                <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
+            </div>
+            <div id="htmlcaption2" class="nivo-html-caption">
+                <strong>This</strong> is an demo of a <em>HTML</em> caption with <a href="#">a link</a>. 
+            </div>
+            <div id="htmlcaption3" class="nivo-html-caption">
+                <strong>This</strong> is an test of a <em>HTML</em> caption with <a href="#">a link</a>. 
+            </div>
+            <div id="htmlcaption4" class="nivo-html-caption">
+                <strong>This</strong> is an sample of a <em>HTML</em> caption with <a href="#">a link</a>. 
+            </div>
+        </div>	
+			<div id="content" style="outline:1px solid rgba(0,0,0,0.1);">	
+				<div id="pcontent">
+					<h1 style="color:#41873d; ">Dual media filter</h1>
+					<br>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;A <b>sand-anthracite filter</b> or dual media filter/multi-media filter is primarily used for the removal of turbidity and suspended solids as low as 10-20 microns. Dual media filters provide very efficient particle removal under the conditions of high filtration rate. Inside a sand-anthracite filter is a layered bed of filter media. <br><br>
+					   <div style="float:right; padding-right:20px; padding-left:20px;"><img src="content images/dmfilt.jpg" width="200" height="250"></img></div><br><br>
+					   <bold>The bed is graded from bottom to top as follows:</bold><br><br>
+					   Having the filter media graded this way enables the sand anthracite Filter to run for longer times before a backwash is necessary. A sand anthracite filter or multi-media filter consists of 2 main parts:<br><br>
+						<ul>
+							<li><span>A composite pressure vessel with Multiport Valve.</span></li>						
+							<li><span>Graded beds of sand and anthracite. </span></li>						
+						</ul><br><br>
+						Internally, the dual media filter is fitted with an inlet distributor and a bottom Colleting system. Externally, the system is fitted with frontal pipe work and isolation valves. Sand is used to remove the suspended particles and anthracite is used to remove the odor and color etc. to make the water fit for different applications. Gravels and pebbles are provided to support to both the media. Periodically, the sand-anthracite filter will backwash, which changes the water flow through the sand-anthracite filter.<br><br>
+						<br><br><br><br><br><br><br><br>
+						<div style="float:right; padding-right:20px; padding-left:20px;"><img src="content images/dmfilt1.jpg" width="250" height="250"></img></div><br><br>
+						<strong>Applications:</strong><br><br>
+						<ul>
+							<li><span>Side stream filtration of cooling tower</span></li>
+							<li><span>Potable water treatment</span></li>
+							<li><span>Waste Water treatment</span></li>								
+							<li><span>Boiler feed water</span></li>								
+						</ul><br><br>
+						<strong>Salient Features:</strong><br><br>
+						<ul>
+							<li><span>High Filtration efficiencies </span></li>								
+							<li><span> Filter up to 10 – 20 Microns </span></li>								
+							<li><span>FRP, MSRL, MSEP & SS Vessel available.</span></li>								
+							<li><span>Standard and effective sand- anthracite media</span></li>								
+							<li><span>Low Pressure drop across the vessel </span></li>								
+							<li><span>Air scouring available for high flow pressure vessel</span></li>								
+							<li><span>Manual, Semi Automatic and Automatic features are provided</span></li>								
+						</ul>
+					</p>
+				</div>
+				<div id="rborder" style="display:none;"></div>
+				<div id="sidebar" style="display:none;">
+					<img src="images/c1.jpg"style="width: 220px; height: 430px;" alt="">
+					<p>"Over <strong>70</strong> percent of earth is covered in water. Only <strong>2</strong> percent of planets water is fresh, but <strong>0.4</strong> percent is locked in polar ice caps and glaciers. Leaving the world with just <strong>0.4</strong> percent to survive on."</p>
+				</div>
+			</div>
+			
+		</div>
+	</div>	
+	<div id="footer">
+		<div id="fcontent">
+		<ul>
+			<li id="home"><a  href="index.html"  >Home</a></li>
+			<li><a href="javascript:void(0);">|</a></li>									
+			<li id="about"><a href="about.html"  >About Us</a></li>
+			<li><a href="javascript:void(0);">|</a></li>	
+			<li id="service"><a href="services.html"  >Services</a></li>
+			<li><a href="javascript:void(0);">|</a></li>	
+			<li id="product"><a href="carbon-filter.html"  >Products</a></li>
+			<li><a href="javascript:void(0);">|</a></li>	
+			<li id="gallery"><a href="gallery.html"  >Gallery</a></li>
+			<li><a href="javascript:void(0);">|</a></li>	
+			<li id="sitemap"><a href="sitemap.html"  >Sitemap</a></li>
+			<li><a href="javascript:void(0);">|</a></li>
+			<li id="contact"><a href="contact.php"  >Contact Us</a></li>										
+		</ul>
+		<p>© 2014 Water Purification Company. All Rights Reserved.</p> 
+		<div>Designed by <a href="http://kenosys.in"><strong>Kenosys Pro Designs.</strong></a></div>
+		</div>	
+	</div>
+</body>
+</html>

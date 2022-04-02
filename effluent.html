@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Effluent treatment</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="nivo-slider.css" type="text/css" />
+<link rel="stylesheet" href="themes/default/default.css" type="text/css" />
+
+<script type="text/javascript" src='jquery-1.2.6.min.js'></script>
+<script type="text/javascript" src="jquery.bgpos.js"></script>
+<script type="text/javascript">
+	$( document ).ready(function( $ ) {
+	$('#navbar > ul li a')
+		.css( {backgroundPosition: "-20px 35px"} )
+		.mouseover(function(){
+			$(this).stop().animate({backgroundPosition:"(-20px 94px)"}, {duration:500})
+		})
+		.mouseout(function(){
+			$(this).stop().animate({backgroundPosition:"(40px 35px)"}, {duration:200, complete:function(){
+				$(this).css({backgroundPosition: "-20px 35px"})
+			}})
+		})
+});
+</script>
+<script type="text/javascript" src='jquery-1.9.0.min.js'></script>
+<script src="jquery.nivo.slider.pack.js" type="text/javascript"></script>
+<script type="text/javascript">
+jQuery.noConflict()(function($){
+	$(window).load(function() {
+ 	$('#slider').nivoSlider({
+     	effect:'random',
+     	pauseTime: 6000,
+     	directionNav: false,
+     	animSpeed: 2000,  
+     	pauseOnHover: false
+        });
+  	});
+});
+</script>
+
+
+
+</head>
+<body>
+	<div id="wrapper">
+		<div id="container">
+			<div id="header" >
+				<div id="logo" ><img src="images/log.png" alt="logo"/></div>	
+				<div id="navbar">
+					<ul>
+						<li ><a  href="index.html"  >Home</a></li>
+						<li ><a href="about.html"  >About Us</a></li>
+						<li ><a href="services.html"  >Services</a></li>
+						<li ><a href="javascript:void(0);"  style="cursor:default">Products</a>
+							<ul>
+								<li ><a  href="javascript:void(0);" style="cursor:default" >Water Treatment</a>
+									<ul>
+										<li ><a  href="javascript:void(0);" style="cursor:default" > Filtration System</a>
+											<ul>
+												<li ><a  href="carbon-filter.html"  >Carbon Filter</a></li>									
+												<li ><a href="sand-filter.html"  >Sand Filter</a></li>
+												<li ><a href="pressure-filter.html"  >Pressure Filter</a></li>
+												<li ><a href="dualmfilter.html"  >Dual Media Filter</a></li>
+											</ul>	
+										</li>
+										<li ><a href="clarifier.html"  > Clarifier</a></li>
+										<li ><a href="ultra-filtration.html"  >Ultra Filtration</a></li>
+										<li ><a href="chemical-dosing.html"  >Chemical Dosing</a></li>
+									</ul>								
+								</li>
+								<li ><a href="javascript:void(0);" style="cursor:default" >RO System</a>
+									<ul>
+										<li ><a  href="domestic-ro.html"  >Domestic RO</a></li>									
+										<li ><a href="industrial-ro.html"  >Industrial RO</a></li>
+										<li ><a href="uv.html"  >UV & Ozone</a></li>
+									</ul>									
+								</li>
+								<li ><a href="javascript:void(0);" style="cursor:default" >Waste Water Treatment</a>
+									<ul>
+										<li ><a  href="sewage.html"  >Sewage water</a></li>									
+										<li ><a href="effluent.html">Effluent Treatment</a></li>
+										<li ><a href="javascript:void(0);" style="cursor:default" >Evaporators</a>
+											<ul>
+												<li ><a  href="falling-flim.html"  >Falling flim</a></li>									
+												<li ><a href="rising-flim.html"  >Rising flim</a></li>
+												<li ><a href="forced-circulation.html"  >Forced Circulation</a></li>
+												<li ><a href="multiple-effect.html"  >Multiple Effect</a></li>
+											</ul>
+										</li>
+									</ul>											
+								</li>
+								<li ><a href="dish-end.html"  >Dished End Pressing</a></li>
+								<li ><a href="vessel-fab.html"  >MS Vessel Fabrication</a></li>
+								<li ><a href="water-softner.html"  >Water Softner</a></li>
+								<li ><a href="javascript:void(0);" style="cursor:default" >Chemical Treatment</a>
+									<ul>
+										<li ><a  href="cooling-tower.html"  >Cooling Tower</a></li>									
+										<li ><a href="boiler-chemical.html">Boiler Chemical</a></li>
+									</ul>	
+								</li>     
+							</ul>
+						</li>
+						<li ><a href="gallery.html"  >Gallery</a></li> 
+						<li ><a href="contact.php"  >Contact Us</a></li>     
+					</ul>
+				</div>	
+			</div>
+			<div class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider">
+                <img src="images/slide1.png"  alt="" title="#htmlcaption1" >            
+                <img src="images/slide2.png" alt="" title="#htmlcaption2">
+                <img src="images/slide3.png" alt="" title="#htmlcaption3">
+                <img src="images/slide4.png"  alt="" title="#htmlcaption4">
+                <img src="images/slide5.png"  alt="" title="#htmlcaption5" >
+                <img src="images/slide6.png"  alt="" title="#htmlcaption6" >
+			
+                
+            </div>
+            <div id="htmlcaption1" class="nivo-html-caption">
+                <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
+            </div>
+            <div id="htmlcaption2" class="nivo-html-caption">
+                <strong>This</strong> is an demo of a <em>HTML</em> caption with <a href="#">a link</a>. 
+            </div>
+            <div id="htmlcaption3" class="nivo-html-caption">
+                <strong>This</strong> is an test of a <em>HTML</em> caption with <a href="#">a link</a>. 
+            </div>
+            <div id="htmlcaption4" class="nivo-html-caption">
+                <strong>This</strong> is an sample of a <em>HTML</em> caption with <a href="#">a link</a>. 
+            </div>
+        </div>	
+			<div id="content" style="outline:1px solid rgba(0,0,0,0.1);">	
+				<div id="pcontent">
+					<h1 style="color:#41873d; ">Effluent Treatment Plants</h1>
+					<br><br>
+					<p><b>Effluent</b> in the artificial sense is in general considered to be water pollution, such as the wastewater discharge from industrial facilities.<br><br>
+						<div style="float:right; padding-left:10px;"><img src="content images/sw2.jpg" style=" border:3px solid white; box-shadow:0px 4px 4px 0px #888888; " width="400" height="300"></img></div>	<br><br>	
+						Our <b>Effluent treatment</b> Plants provide effective solutions to effluent odor control, BOD reduction, aeration, clarification, phosphorous and nitrogen removal and more. Our process experts work with the design team to learn the various factors that contribute to a plant’s design, including effluent requirements, land availability, energy, labor and disposal costs. <br><br>
+						We then apply our extensive process knowledge and product expertise, analyzing the efficiency of each process, their interaction with other components, while optimizing the overall efficiency of the entire system from start to finish.<br><br>
+						WPCs good practice guide deals with improving the performance of effluent treatment plant to reduce operating costs and reduce environmental pollution. Most companies operate effluent treatment plants to reduce the potential for pollution of receiving waters and to comply with discharge consent conditions. Effective management and control of the processes used for effluent treatment will help you to <br><br>
+						<ul>
+							<li><span>Reduce your operating costs and thus increase profits.</span></li>								
+							<li><span>Achieve more effective compliance with legislation.</span></li>								
+							<li><span>Improve your company's public image. </span></li>								
+						</ul><br><br>
+						<strong>Need of ETP</strong> 
+						<ul>
+							<li><span>Water is basic necessity of life used for many purposes one of which is industrial use.</span></li>						
+							<li><span>Industries generally take water from rivers or lakes but they have to pay heavy taxes for that.</span></li>						
+							<li><span>So it’s necessary for them to recycle that to reduce cost and also conserve it.</span></li>						
+							<li><span>Main function of our ETP is to clean industry effluent and recycle it for further use.</span></li>						
+						</ul><br><br>
+						<b>We supply the effluent treatment plants for following industries:</b><br><br>
+						<ul>
+							<li><span>Metal finishing / Automobile / Steel mills / Electroplating</span></li>						
+							<li><span>Dying /Bleaching processes/tanneries/laundry-Textile Industry</span></li>						
+							<li><span>Acid-Alkali treatment- chemical industry/recovery of chemical</span></li>						
+							<li><span>Paper & pulp Industry, Leather Industry</span></li>						
+							<li><span>Oily waste water- automobile /refineries</span></li>						
+							<li><span>Pharmaceutical & food industry</span></li>						
+							<li><span>Thermal power / Rubber industry / Fertilizers</span></li>						
+						</ul>				
+					</p>
+				</div>
+				<div id="rborder" style="display:none;"></div>
+				<div id="sidebar" style="display:none;">
+					<img src="images/c1.jpg"style="width: 220px; height: 430px;" alt="">
+					<p>"Over <strong>70</strong> percent of earth is covered in water. Only <strong>2</strong> percent of planets water is fresh, but <strong>0.4</strong> percent is locked in polar ice caps and glaciers. Leaving the world with just <strong>0.4</strong> percent to survive on."</p>
+				</div>
+			</div>
+			
+		</div>
+	</div>	
+	<div id="footer">
+		<div id="fcontent">
+		<ul>
+			<li id="home"><a  href="index.html"  >Home</a></li>
+			<li><a href="javascript:void(0);">|</a></li>									
+			<li id="about"><a href="about.html"  >About Us</a></li>
+			<li><a href="javascript:void(0);">|</a></li>	
+			<li id="service"><a href="services.html"  >Services</a></li>
+			<li><a href="javascript:void(0);">|</a></li>	
+			<li id="product"><a href="carbon-filter.html"  >Products</a></li>
+			<li><a href="javascript:void(0);">|</a></li>	
+			<li id="gallery"><a href="gallery.html"  >Gallery</a></li>
+			<li><a href="javascript:void(0);">|</a></li>	
+			<li id="sitemap"><a href="sitemap.html"  >Sitemap</a></li>
+			<li><a href="javascript:void(0);">|</a></li>
+			<li id="contact"><a href="contact.php"  >Contact Us</a></li>										
+		</ul>
+		<p>© 2014 Water Purification Company. All Rights Reserved.</p> 
+		<div>Designed by <a href="http://kenosys.in"><strong>Kenosys Pro Designs.</strong></a></div>
+		</div>	
+	</div>
+</body>
+</html>

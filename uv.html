@@ -1,0 +1,200 @@
+filteration<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>UV Treatment</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="nivo-slider.css" type="text/css" />
+<link rel="stylesheet" href="themes/default/default.css" type="text/css" />
+
+<script type="text/javascript" src='jquery-1.2.6.min.js'></script>
+<script type="text/javascript" src="jquery.bgpos.js"></script>
+<script type="text/javascript">
+	$( document ).ready(function( $ ) {
+	$('#navbar > ul li a')
+		.css( {backgroundPosition: "-20px 35px"} )
+		.mouseover(function(){
+			$(this).stop().animate({backgroundPosition:"(-20px 94px)"}, {duration:500})
+		})
+		.mouseout(function(){
+			$(this).stop().animate({backgroundPosition:"(40px 35px)"}, {duration:200, complete:function(){
+				$(this).css({backgroundPosition: "-20px 35px"})
+			}})
+		})
+});
+</script>
+<script type="text/javascript" src='jquery-1.9.0.min.js'></script>
+<script src="jquery.nivo.slider.pack.js" type="text/javascript"></script>
+<script type="text/javascript">
+jQuery.noConflict()(function($){
+	$(window).load(function() {
+ 	$('#slider').nivoSlider({
+     	effect:'random',
+     	pauseTime: 6000,
+     	directionNav: false,
+     	animSpeed: 2000,  
+     	pauseOnHover: false
+        });
+  	});
+});
+</script>
+
+
+
+</head>
+<body>
+	<div id="wrapper">
+		<div id="container">
+			<div id="header" >
+				<div id="logo" ><img src="images/log.png" alt="logo"/></div>	
+				<div id="navbar">
+					<ul>
+						<li ><a  href="index.html"  >Home</a></li>
+						<li ><a href="about.html"  >About Us</a></li>
+						<li ><a href="services.html"  >Services</a></li>
+						<li ><a href="javascript:void(0);"  style="cursor:default">Products</a>
+							<ul>
+								<li ><a  href="javascript:void(0);" style="cursor:default" >Water Treatment</a>
+									<ul>
+										<li ><a  href="javascript:void(0);" style="cursor:default" > Filtration System</a>
+											<ul>
+												<li ><a  href="carbon-filter.html"  >Carbon Filter</a></li>									
+												<li ><a href="sand-filter.html"  >Sand Filter</a></li>
+												<li ><a href="pressure-filter.html"  >Pressure Filter</a></li>
+												<li ><a href="dualmfilter.html"  >Dual Media Filter</a></li>
+											</ul>	
+										</li>
+										<li ><a href="clarifier.html"  > Clarifier</a></li>
+										<li ><a href="ultra-filtration.html"  >Ultra Fileration</a></li>
+										<li ><a href="chemical-dosing.html"  >Chemical Dosing</a></li>
+									</ul>								
+								</li>
+								<li ><a href="javascript:void(0);" style="cursor:default" >RO System</a>
+									<ul>
+										<li ><a  href="domestic-ro.html"  >Domestic RO</a></li>									
+										<li ><a href="industrial-ro.html"  >Industrial RO</a></li>
+										<li ><a href="uv.html"  >UV & Ozone</a></li>
+									</ul>									
+								</li>
+								<li ><a href="javascript:void(0);" style="cursor:default" >Waste Water Treatment</a>
+									<ul>
+										<li ><a  href="sewage.html"  >Sewage water</a></li>									
+										<li ><a href="effluent.html">Effluent Treatment</a></li>
+										<li ><a href="javascript:void(0);" style="cursor:default" >Evaporators</a>
+											<ul>
+												<li ><a  href="falling-flim.html"  >Falling flim</a></li>									
+												<li ><a href="rising-flim.html"  >Rising flim</a></li>
+												<li ><a href="forced-circulation.html"  >Forced Circulation</a></li>
+												<li ><a href="multiple-effect.html"  >Multiple Effect</a></li>
+											</ul>
+										</li>
+									</ul>											
+								</li>
+								<li ><a href="dish-end.html"  >Dished End Pressing</a></li>
+								<li ><a href="vessel-fab.html"  >MS Vessel Fabrication</a></li>
+								<li ><a href="water-softner.html"  >Water Softner</a></li>			
+								<li ><a href="javascript:void(0);" style="cursor:default" >Chemical Treatment</a>
+									<ul>
+										<li ><a  href="cooling-tower.html"  >Cooling Tower</a></li>									
+										<li ><a href="boiler-chemical.html">Boiler Chemical</a></li>
+									</ul>	
+								</li>     
+							</ul>
+						</li>
+						<li ><a href="gallery.html"  >Gallery</a></li> 
+						<li ><a href="contact.php"  >Contact Us</a></li>     
+					</ul>
+				</div>	
+			</div>
+			<div class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider">
+                <img src="images/slide1.png"  alt="" title="#htmlcaption1" >            
+                <img src="images/slide2.png" alt="" title="#htmlcaption2">
+                <img src="images/slide3.png" alt="" title="#htmlcaption3">
+                <img src="images/slide4.png"  alt="" title="#htmlcaption4">
+                <img src="images/slide5.png"  alt="" title="#htmlcaption5" >
+                <img src="images/slide6.png"  alt="" title="#htmlcaption6" >
+			
+                
+            </div>
+            <div id="htmlcaption1" class="nivo-html-caption">
+                <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
+            </div>
+            <div id="htmlcaption2" class="nivo-html-caption">
+                <strong>This</strong> is an demo of a <em>HTML</em> caption with <a href="#">a link</a>. 
+            </div>
+            <div id="htmlcaption3" class="nivo-html-caption">
+                <strong>This</strong> is an test of a <em>HTML</em> caption with <a href="#">a link</a>. 
+            </div>
+            <div id="htmlcaption4" class="nivo-html-caption">
+                <strong>This</strong> is an sample of a <em>HTML</em> caption with <a href="#">a link</a>. 
+            </div>
+        </div>	
+			<div id="content" style="outline:1px solid rgba(0,0,0,0.1);">	
+				<div id="pcontent">
+					<h1 style="color:#41873d; ">UV and Ozone</h1>
+					<br><br>
+					<strong>Ozone disinfection</strong><br>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;<b>Ozone</b> is an unstable molecule which readily gives up one atom of oxygen providing a powerful oxidizing agent which is toxic to most waterborne organisms. It is a very strong, broad spectrum disinfectant that is widely used. It is an effective method to inactivate harmful protozoa that form cysts. It also works well against almost all other pathogens.<br><br>
+  				      <div style="float:right; padding-left:10px;"><img src="content images/uv.jpg" style=" border:3px solid white; box-shadow:0px 4px 4px 0px #888888; " width="350" height="200"></img></div>	<br>				
+					   <b>Ozone</b> is created with what is called an Ozone Generator.  It creates O3 in much the same way as the sun does. A chamber with a high intensity Ultraviolet (UV) light is filled with compressed air which then converts some of the oxygen in the air into ozone. <br><br>
+					   This ozone is then sent through a line into a diffuser, which creates ozone-saturated bubbles. Water is drawn in to mix with the bubbles, and then fed into the water purification tank.<br><br>
+  				      The weak Oxygen molecule in the Ozone attaches to other organic molecules in the water and oxidizies them.<br><br>
+  				      The ozone water purification system is one of the most advanced water treatment processes in the water industry. <br><br>
+  				      <b>Advantages:</b>
+  				      <ul>
+							<li><span>Ozone is primarily a disinfectant that effectively kills biological contaminants.  </span></li>
+							<li><span>Ozone also oxidizes and precipitates iron, sulfur, and manganese so they can be filtered out. </span></li>
+							<li><span>Ozone will oxidize and break down many organic chemicals including many that cause odor and taste problems.</span></li>
+							<li><span>Ozonation produces no taste or odor in the water. </span></li>
+							<li><span>Ozone is made of oxygen and reverts to pure oxygen and it vanishes without a trace once it has been used. </span></li>
+  				      </ul><br><br>
+  				      <strong>UV Treatment</strong><br>
+  				      <b>UV is Ultraviolet radiation</b>, an energy band within the electromagnetic energy spectrum. Its wavelength is between that of visible light and x-rays and it has been found to be an effective method for destroying germs in a water supply. <br><br>	
+  				      <div style="float:right; padding-left:10px;"><img src="content images/ozone.jpeg" style=" border:3px solid white; box-shadow:0px 4px 4px 0px #888888; " width="400" height="250"></img></div>	<br>				
+  				      UV destroys germs by causing a molecular change in their DNA makeup that prevents them from multiplying and destroys the ability to spread disease. When germs cannot multiply, they are considered dead.<br><br>  				      
+  				      Different germs can tolerate different amounts of UV light and therefore require varying amounts of UV energy to be destroyed. By definition, dosage is the intensity of UV light multiplied by time. The intensity is the amount of UV energy that the UV lamp produces at a certain distance from its surface per square centimeter of the lamp’s area. The time is the period it actually takes the water to travel inside the UV chamber.<br><br>
+  				      <b>Advantages of UV Water Treatment Systems:</b><br><br>
+  				      <ul>
+  				      	<li><span>UV is effective and quick. No need for holding tanks and reaction times. No need for storing chemicals.</span></li>
+  				      	<li><span>UV does not alter the taste of water, which makes it ideal for use in bottling plants and food processing applications.</span></li>
+  				      	<li><span>UV is safe. NO need to add or handle hazardous chemicals or risk polluting the environment.</span></li>
+  				      	<li><span>UV is compatible with all other water treatment processes. No need for de-chlorination if using RO systems. In fact, UV enhances the use of other water treatment by keeping them free from germs.</span></li>
+  				      	<li><span>UV is economical. Almost always, the cost of UV disinfection units is much less than the cost of chemical treatment systems. The cost of service and maintenance of UV units is very low. The electrical running cost of an UV unit in a house is about that of a regular light bulb.</span></li>
+  				      	<li><span>UV is more effective against viruses than chlorine.</span></li>
+  				      	<li><span>Easy installation. UV units are very easy to install and require very little space.</span></li>
+  				      </ul>
+					</p>
+				</div>
+				<div id="rborder" style="display:none;"></div>
+				<div id="sidebar" style="display:none;">
+					<img src="images/c1.jpg"style="width: 220px; height: 430px;" alt="">
+					<p>"Over <strong>70</strong> percent of earth is covered in water. Only <strong>2</strong> percent of planets water is fresh, but <strong>0.4</strong> percent is locked in polar ice caps and glaciers. Leaving the world with just <strong>0.4</strong> percent to survive on."</p>
+				</div>
+			</div>
+			
+		</div>
+	</div>	
+	<div id="footer">
+		<div id="fcontent">
+		<ul>
+			<li id="home"><a  href="index.html"  >Home</a></li>
+			<li><a href="javascript:void(0);">|</a></li>									
+			<li id="about"><a href="about.html"  >About Us</a></li>
+			<li><a href="javascript:void(0);">|</a></li>	
+			<li id="service"><a href="services.html"  >Services</a></li>
+			<li><a href="javascript:void(0);">|</a></li>	
+			<li id="product"><a href="carbon-filter.html"  >Products</a></li>
+			<li><a href="javascript:void(0);">|</a></li>	
+			<li id="gallery"><a href="gallery.html"  >Gallery</a></li>
+			<li><a href="javascript:void(0);">|</a></li>	
+			<li id="sitemap"><a href="sitemap.html"  >Sitemap</a></li>
+			<li><a href="javascript:void(0);">|</a></li>
+			<li id="contact"><a href="contact.php"  >Contact Us</a></li>										
+		</ul>
+		<p>© 2014 Water Purification Company. All Rights Reserved.</p> 
+		<div>Designed by <a href="http://kenosys.in"><strong>Kenosys Pro Designs.</strong></a></div>
+		</div>	
+	</div>
+</body>
+</html>
